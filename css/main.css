@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+:root {
+  --main-color: #0E0B16;
+  --second-color: #A239CA;
+  --third-color: #4717F6;
+  --main-font: 'Open Sans', sans-serif;
+}
+
+* {
+  font-family: var(--main-font);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+nav.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 575;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  font-size: 14pt;
+  color: #7c7c7c;
+  background-color: var(--main-color);
+  -webkit-box-shadow: 0px 2px 5px var(--second-color);
+          box-shadow: 0px 2px 5px var(--second-color);
+}
+
+nav.menu div {
+  position: absolute;
+  right: 0;
+  margin: auto 25px;
+}
+
+nav.menu div .nav-item {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+nav.menu div .nav-item:hover {
+  color: var(--third-color);
+}
+
+section.info {
+  display: block;
+  background-color: #EEEEF6;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 2px 2px 8px #d1d1d1;
+          box-shadow: 2px 2px 8px #d1d1d1;
+}
+
+section.info header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 75vh;
+  color: #fff;
+  -webkit-box-shadow: 0px 1px 15px #0E0B16;
+          box-shadow: 0px 1px 15px #0E0B16;
+  background: var(--main-color) no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+section.info header h1 {
+  position: absolute;
+  font-weight: 450;
+  bottom: 350px;
+  left: 175px;
+  font-size: 28pt;
+}
+
+section.info header p {
+  position: absolute;
+  font-weight: 300;
+  font-size: 16pt;
+  width: 500px;
+  text-align: justify;
+  left: 175px;
+  bottom: 200px;
+}
+
+section.info header button {
+  position: absolute;
+  cursor: pointer;
+  left: 525px;
+  bottom: 100px;
+  width: 10vw;
+  height: 8vh;
+  border: none;
+  -webkit-box-shadow: 2px 2px 5px var(--third-color);
+          box-shadow: 2px 2px 5px var(--third-color);
+  border-radius: 5px;
+  background-color: var(--third-color);
+  color: #fff;
+  font-size: 12pt;
+}
+
+section.info header button:hover {
+  background-color: var(--second-color);
+  -webkit-box-shadow: 2px 2px 5px var(--second-color);
+          box-shadow: 2px 2px 5px var(--second-color);
+  color: #f2f2f2;
+}
+
+section.info header img {
+  width: 38vw;
+  position: absolute;
+  right: 75px;
+  top: 45px;
+}
+
+section.info section.info-cards {
+  display: block;
+  margin: 30px 0;
+}
+
+section.info section.info-cards div.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  width: 75vw;
+  padding: 15px;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 10px #d1d1d1;
+          box-shadow: 2px 2px 10px #d1d1d1;
+  margin: 20px auto;
+}
+
+section.info section.info-cards div.card-info div {
+  margin: 30px;
+  font-size: 14pt;
+}
+
+section.info section.info-cards div.card-info div h2 {
+  font-size: 20pt;
+}
+
+section.info section.info-cards div.card-info img {
+  margin: 30px;
+  width: 25vw;
+}
+
+section.about {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px auto;
+  margin-bottom: 0;
+}
+
+section.about h2 {
+  font-size: 20pt;
+}
+
+section.about h3 {
+  font-size: 16pt;
+  font-weight: 475;
+  margin: 0 5px;
+}
+
+section.about p {
+  font-size: 12.5pt;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+section.about > img {
+  width: 25vw;
+  border-radius: 45%;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  margin: 15px;
+}
+
+section.about div.knowledge {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px auto;
+}
+
+section.about div.knowledge img {
+  margin: 5px;
+  width: 3vw;
+}
+
+section.about div.contact {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
