@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
-:root {
-  --main-color: #0E0B16;
-  --second-color: #A239CA;
-  --third-color: #4717F6;
-  --main-font: 'Open Sans', sans-serif;
-}
-
 * {
-  font-family: var(--main-font);
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -39,9 +32,9 @@ nav.menu {
   height: 8vh;
   font-size: 14pt;
   color: #7c7c7c;
-  background-color: var(--main-color);
-  -webkit-box-shadow: 0px 2px 5px var(--second-color);
-          box-shadow: 0px 2px 5px var(--second-color);
+  background-color: #0E0B16;
+  -webkit-box-shadow: 0px 2px 5px #A239CA;
+          box-shadow: 0px 2px 5px #A239CA;
 }
 
 nav.menu div {
@@ -56,7 +49,7 @@ nav.menu div .nav-item {
 }
 
 nav.menu div .nav-item:hover {
-  color: var(--third-color);
+  color: #4717F6;
 }
 
 section.info {
@@ -82,7 +75,7 @@ section.info header {
   color: #fff;
   -webkit-box-shadow: 0px 1px 15px #0E0B16;
           box-shadow: 0px 1px 15px #0E0B16;
-  background: var(--main-color) no-repeat;
+  background: #0E0B16 no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
@@ -118,18 +111,18 @@ section.info header button {
   width: 10vw;
   height: 8vh;
   border: none;
-  -webkit-box-shadow: 2px 2px 5px var(--third-color);
-          box-shadow: 2px 2px 5px var(--third-color);
+  -webkit-box-shadow: 2px 2px 5px #4717F6;
+          box-shadow: 2px 2px 5px #4717F6;
   border-radius: 5px;
-  background-color: var(--third-color);
+  background-color: #4717F6;
   color: #fff;
   font-size: 12pt;
 }
 
 section.info header button:hover {
-  background-color: var(--second-color);
-  -webkit-box-shadow: 2px 2px 5px var(--second-color);
-          box-shadow: 2px 2px 5px var(--second-color);
+  background-color: #2a0c94;
+  -webkit-box-shadow: 2px 2px 5px #2a0c94;
+          box-shadow: 2px 2px 5px #2a0c94;
   color: #f2f2f2;
 }
 
@@ -231,5 +224,104 @@ section.about div.knowledge img {
 
 section.about div.contact {
   display: block;
+}
+
+footer {
+  background-color: #0E0B16;
+  color: white;
+  font-size: 12pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div.contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+footer div.contact img {
+  width: 25px;
+  margin: 0 5px;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer form > div input {
+  width: 300px;
+  font-size: 1.5em;
+  border-radius: 4px;
+  border: none;
+  margin: 5px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer form > div button {
+  width: 300px;
+  height: 45px;
+  color: white;
+  margin: 5px 0;
+  font-size: 1.4em;
+  background-color: #4717F6;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer form > div button:hover {
+  background-color: #2a0c94;
+  cursor: pointer;
+}
+
+footer form textarea {
+  width: 300px;
+  height: 135px;
+  resize: none;
+  border: none;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */

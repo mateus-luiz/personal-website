@@ -64,20 +64,23 @@
                 <img alt="Javascript" src="images/javascript.svg">
                 <img alt="CSharp" src="images/c-sharp.svg">
             </div>
-            <div class="contact">
-                <p>Email <a>mateus.florentino2001@gmail.com</a></p>
-                <p>Github <a>github.com/mateus-luiz</a></p>
-            </div>
-            <form>
-                <input type="text" id="fName" name="fName">
-                <input type="email" id="fEmail" name="fEmail">
-                <textarea id="fMessage" name="fMessage">
-                </textarea>
-                <button type="submit" id="fSend" name="fSend">Enviar</button>
-            </form>
         </section>
     </main>
     <footer>
+        <div class="contact">
+            <a>mateus.florentino2001@gmail.com</a>
+            <a href="https://www.github.com/mateus-luiz" target="_blank"><img src="images/github-icon.svg"> <span>Github</span></a>
+            <a href="https://www.linkedin.com/in/mateusl-dev" target="_blank"><img src="images/linkedin-icon.svg"><span>Linkedin</span></a>
+            <a href="https://www.instagram.com/mateusl_developer/" target="_blank"><img src="images/instagram-icon.svg"><span>Instagram</span></a>
+        </div>
+        <form>
+            <div>
+                <input type="text" id="fName" name="fName" minlength="8" placeholder="Name" required>
+                <input type="email" id="fEmail" name="fEmail" placeholder="Email" required>
+                <button type="submit" id="fSend" name="fSend">Enviar</button>
+            </div>
+            <textarea id="fMessage" name="fMessage" placeholder="Mensagem" maxlength="800" required></textarea>
+        </form>
     </footer>
 </body>
 </html>
