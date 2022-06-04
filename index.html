@@ -10,25 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <a class="nav-logo"><img src="" alt="Logo"></a>
-            <div>
-                <a class="nav-item">CONTEÚDO</a>
-                <a class="nav-item">SOBRE</a>
-                <a class="nav-item">CONTATO</a>
-            </div>
-        </nav>
-    </header>
     <main>
         <section class="info">
             <header class="info-header">
-                <h1 class="info-title">CRIAÇÃO DE SITES</h1>
-                <p class="info-description">Vou criar um site sob medida para o seu negócio, com visual profissional e tecnologias avançadas para gerar resultados. Otimizado para o Google e com integrações para Facebook, Instagram e Whatsapp.</p>
-                <button class="info-button" id="fContratar" name="fContratar">CONTRATAR</button>
-                <img src="images/banner-icon.svg">
+                <div>
+                    <h1 class="info-title">CRIAÇÃO DE SITES</h1>
+                    <p class="info-description">Vou criar um site sob medida para o seu negócio, com visual profissional e tecnologias avançadas para gerar resultados. Otimizado para o Google e com integrações para Facebook, Instagram e Whatsapp.</p>
+                    <a class="info-button" id="fContratar" name="fContratar" target="_blank" href="https://wa.me/message/JSCHABOUPNXUM1"><span>CONTRATAR</span></a>
+                </div>
             </header>
-            <section class="info-cards">
+            <section class="info-cards"  id="info">
                 <div class="card-info">
                     <img class="info-banner" src="images/responsive.svg" alt="responsive">
                     <div class="card-description">
@@ -53,7 +44,7 @@
                 </div>
             </section>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="about-title">SOBRE MIM</h2>
             <h3 class="about-subtitle">Mateus Luiz</h3>
             <img class="profile" src="images/profile_pic.jpg">
@@ -67,20 +58,19 @@
         </section>
     </main>
     <footer>
-        <div class="contact">
+        <div class="contact" id="contact">
             <a>mateus.florentino2001@gmail.com</a>
             <a href="https://www.github.com/mateus-luiz" target="_blank"><img src="images/github-icon.svg"> <span>Github</span></a>
             <a href="https://www.linkedin.com/in/mateusl-dev" target="_blank"><img src="images/linkedin-icon.svg"><span>Linkedin</span></a>
             <a href="https://www.instagram.com/mateusl_developer/" target="_blank"><img src="images/instagram-icon.svg"><span>Instagram</span></a>
         </div>
-        <form>
-            <div>
-                <input type="text" id="fName" name="fName" minlength="8" placeholder="Name" required>
-                <input type="email" id="fEmail" name="fEmail" placeholder="Email" required>
-                <button type="submit" id="fSend" name="fSend">Enviar</button>
-            </div>
-            <textarea id="fMessage" name="fMessage" placeholder="Mensagem" maxlength="800" required></textarea>
+        <form action="https://formsubmit.co/mateus.florentino2001@gmail.com" method="POST">
+            <input type="text" id="fName" name="name" minlength="8" placeholder="Nome" required>
+            <input type="email" id="fEmail" name="email" placeholder="Email" required>
+            <textarea class="message-area" id="fMessage" name="message" placeholder="Mensagem" maxlength="800" required></textarea>
+            <button type="submit" id="fSend" name="submit">Enviar</button>
         </form>
     </footer>
 </body>
+
 </html>

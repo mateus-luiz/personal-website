@@ -1,55 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 * {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #fff;
-}
-
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 500;
-}
-
-nav.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 575;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8vh;
-  font-size: 14pt;
-  color: #7c7c7c;
-  background-color: #0E0B16;
-  -webkit-box-shadow: 0px 2px 5px #A239CA;
-          box-shadow: 0px 2px 5px #A239CA;
-}
-
-nav.menu div {
-  position: absolute;
-  right: 0;
-  margin: auto 25px;
-}
-
-nav.menu div .nav-item {
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-nav.menu div .nav-item:hover {
-  color: #4717F6;
+  width: 100vw;
 }
 
 section.info {
@@ -70,12 +28,12 @@ section.info header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   height: 75vh;
   color: #fff;
   -webkit-box-shadow: 0px 1px 15px #0E0B16;
           box-shadow: 0px 1px 15px #0E0B16;
-  background: #0E0B16 no-repeat;
+  background: url(../images/bg-site-atualizado.jpg) no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
@@ -85,57 +43,73 @@ section.info header {
   justify-items: center;
 }
 
+section.info header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 95%;
+}
+
 section.info header h1 {
-  position: absolute;
   font-weight: 450;
-  bottom: 350px;
-  left: 175px;
   font-size: 28pt;
+  margin: 10px;
 }
 
 section.info header p {
-  position: absolute;
   font-weight: 300;
-  font-size: 16pt;
-  width: 500px;
-  text-align: justify;
-  left: 175px;
-  bottom: 200px;
+  font-size: 14pt;
+  text-align: center;
+  margin: 10px;
 }
 
-section.info header button {
-  position: absolute;
+section.info header a {
   cursor: pointer;
-  left: 525px;
-  bottom: 100px;
-  width: 10vw;
-  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 12vw;
+  min-height: 8vh;
   border: none;
   -webkit-box-shadow: 2px 2px 5px #4717F6;
           box-shadow: 2px 2px 5px #4717F6;
   border-radius: 5px;
   background-color: #4717F6;
   color: #fff;
-  font-size: 12pt;
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14pt;
+  margin: 5px;
 }
 
-section.info header button:hover {
+section.info header a:hover {
   background-color: #2a0c94;
   -webkit-box-shadow: 2px 2px 5px #2a0c94;
           box-shadow: 2px 2px 5px #2a0c94;
   color: #f2f2f2;
 }
 
-section.info header img {
-  width: 38vw;
-  position: absolute;
-  right: 75px;
-  top: 45px;
-}
-
 section.info section.info-cards {
   display: block;
   margin: 30px 0;
+  max-width: 100%;
 }
 
 section.info section.info-cards div.card-info {
@@ -179,7 +153,8 @@ section.about {
   background-color: #fff;
   padding: 15px;
   border-radius: 4px;
-  margin: 20px auto;
+  margin: 20px 0;
+  max-width: 100%;
   margin-bottom: 0;
 }
 
@@ -214,7 +189,7 @@ section.about div.knowledge {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5px auto;
+  margin: 5px 0;
 }
 
 section.about div.knowledge img {
@@ -222,21 +197,19 @@ section.about div.knowledge img {
   width: 3vw;
 }
 
-section.about div.contact {
-  display: block;
-}
-
 footer {
   background-color: #0E0B16;
   color: white;
   font-size: 12pt;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 100%;
 }
 
 footer div.contact {
@@ -267,52 +240,39 @@ footer div.contact img {
 }
 
 footer form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 
-footer form > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer form > div input {
+footer form input {
   width: 300px;
-  font-size: 1.5em;
+  font-size: 1em;
   border-radius: 4px;
   border: none;
-  margin: 5px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
-footer form > div button {
+footer form button {
   width: 300px;
   height: 45px;
   color: white;
-  margin: 5px 0;
-  font-size: 1.4em;
+  font-size: 1em;
   background-color: #4717F6;
   border: none;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
-footer form > div button:hover {
+footer form button:hover {
   background-color: #2a0c94;
   cursor: pointer;
 }
@@ -322,6 +282,99 @@ footer form textarea {
   height: 135px;
   resize: none;
   border: none;
+  font-size: 1em;
   border-radius: 4px;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ 4;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  footer form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer form textarea, footer form button {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+@media only screen and (min-width: 345px) and (max-width: 700px) {
+  section.info-cards img {
+    display: none;
+  }
+  button.info-button {
+    padding: 10px;
+    font-size: 10pt;
+  }
+  section.info-cards h2 {
+    font-size: 0.5em;
+    text-align: center;
+  }
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer div.contact {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer form {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  footer form textarea, footer form button {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  header.info-header h1 {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  section.info-cards img {
+    display: none;
+  }
+  section.info-cards h2 {
+    font-size: 0.5em;
+    text-align: center;
+  }
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  footer div.contact {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer form {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  footer form textarea, footer form button, footer form input {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 230px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
