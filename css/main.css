@@ -217,6 +217,8 @@ section.portfolio a.more {
   display: flex;
   width: 12vw;
   height: 8vh;
+  min-width: 12vw;
+  min-height: 8vh;
   border: none;
   -webkit-box-shadow: 2px 2px 5px #4717F6;
           box-shadow: 2px 2px 5px #4717F6;
@@ -231,7 +233,7 @@ section.portfolio a.more {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14pt;
+  font-size: 14px;
   margin: 5px auto;
 }
 
@@ -384,6 +386,12 @@ footer form textarea {
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
+  div.projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   footer form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -405,6 +413,12 @@ footer form textarea {
   section.info-cards h2 {
     font-size: 0.5em;
     text-align: center;
+  }
+  div.projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer {
     -ms-grid-columns: 1fr;
@@ -442,6 +456,12 @@ footer form textarea {
   section.info-cards h2 {
     font-size: 0.5em;
     text-align: center;
+  }
+  div.projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer {
     -ms-grid-columns: 1fr;

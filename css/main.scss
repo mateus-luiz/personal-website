@@ -184,6 +184,8 @@ section.portfolio{
         display: flex;
         width: 12vw;
         height: 8vh;
+        min-width: 12vw;
+        min-height: 8vh;
         border: none;
         box-shadow: 2px 2px 5px $third-color;
         border-radius: 5px;
@@ -193,7 +195,7 @@ section.portfolio{
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-size: 14pt;
+        font-size: 14px;
         margin: 5px auto;
     }
 }
@@ -320,6 +322,11 @@ footer{
 
 
 @media only screen and (min-width: 700px) and (max-width: 900px){
+    div.projects{
+        flex-direction: column;
+    }
+    
+
     footer{
         form{
             grid-template-columns: 1fr;
@@ -347,6 +354,10 @@ footer{
             font-size: 0.5em;
             text-align: center;
         }
+    }
+
+    div.projects{
+        flex-direction: column;
     }
 
     footer{
@@ -387,6 +398,10 @@ footer{
             font-size: 0.5em;
             text-align: center;
         }
+    }
+
+    div.projects{
+        flex-direction: column;
     }
 
     footer{
