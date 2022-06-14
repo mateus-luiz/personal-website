@@ -11,4 +11,4 @@
 - JAVASCRIPT
 
 ##
-<div align="center">https://mateus-luiz.github.io/my-website/</div>
+<div align="center">https://mateus-luiz.github.io/personal-website/</div>
